@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MangaController;
+use App\Http\Controllers\DessinateurController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('mangas','App\Http\Controllers\MangaController@index');
+Route::get('mangas',[MangaController::class, 'index']);
+Route::get('dessinateurs',[DessinateurController::class, 'index']);
