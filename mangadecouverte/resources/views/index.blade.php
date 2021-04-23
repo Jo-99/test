@@ -3,7 +3,7 @@
         <th>Id</th>
         <th>Titre</th>
         <th>Prix</th>
-        <th>Couverture</th>
+        <th>Genre</th>
         <th>Nom Dessinateur</th>
         <th>Prénom Dessinateur</th>
     </thead>
