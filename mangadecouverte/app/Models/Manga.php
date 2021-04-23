@@ -15,8 +15,9 @@ class Manga extends Model
     {
         # code...
         //$mangas = DB::table('manga')->get();
-        $mangas = DB::table('manga')->select('id_manga','titre', 'prix','couverture','nom_dessinateur','prenom_dessinateur')
+        $mangas = DB::table('manga')->select('id_manga','titre', 'prix','lib_genre','nom_dessinateur','prenom_dessinateur')
         ->join('dessinateur', 'dessinateur.id_dessinateur', '=', 'manga.id_dessinateur')
+        ->join('genre', 'genre->id_genre', '=', 'manga.id_genre')
         ->get();
         return $mangas;
     }

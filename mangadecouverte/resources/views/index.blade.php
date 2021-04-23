@@ -12,7 +12,7 @@
             <td> {{ $manga->id_manga }} </td>
             <td> {{ $manga->titre }} </td>
             <td> {{ $manga->prix }} </td>
-            <td> {{ $manga->couverture }}</td>
+            <td> {{ $manga->lib_genre }}</td>
             <td> {{ $manga->nom_dessinateur }}</td>
             <td> {{ $manga->prenom_dessinateur }}</td>
         </tr>
